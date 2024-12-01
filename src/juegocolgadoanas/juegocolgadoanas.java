@@ -67,7 +67,38 @@ public class juegocolgadoanas {
 	                        intentosJugador1--;
 	                    }
 	                }
+	                // Jugador 2 intenta adivinar
+	                if (intentosJugador2 > 0 && !palabraAdivinadaEntera) {
+	                    System.out.println("\nPalabra actual: " + String.valueOf(palabraAdivinada));
+	                    System.out.println("Intentos restantes del Jugador 2: " + intentosJugador2);
+	                    System.out.print("Jugador2" + ", adivina una letra: ");
+	                    char letra = scanner.nextLine().toLowerCase().charAt(0);
+
+	                    // Comprobar si la letra está en la palabra
+	                    boolean acierto = false;
+	                    for (int i = 0; i < palabraSecreta.length(); i++) {
+	                        if (palabraSecreta.charAt(i) == letra) {
+	                            palabraAdivinada[i] = letra;
+	                            acierto = true;
+	                        }
+	                    }
+
+	                    // Actualizar estado del juego
+	                    if (acierto) {
+	                        System.out.println("¡Correcto!");
+	                        if (String.valueOf(palabraAdivinada).equals(palabraSecreta)) {
+	                            System.out.println("\n¡" + "Jugador2" + " ha adivinado la palabra: " + palabraSecreta + "!");
+	                            puntosJugador2++;
+	                            palabraAdivinadaEntera = true;
+	                        }
+	                    } else {
+	                        System.out.println("Fallaste.");
+	                        intentosJugador2--;
+	                    }
+	                }
+	            }
+
 	   }
 	}
 	        }
-}
+

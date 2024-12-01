@@ -17,6 +17,11 @@ public class juegocolgadoanas {
 	        int puntosJugador1 = 0;
 	        int puntosJugador2 = 0;
 
+	        // Inicio de Rondas
+	        for (int ronda = 1; ronda <= numRondas; ronda++) {
+	            System.out.println(" Ronda " + ronda + " ---");
+
+	}
 	}
 
 }

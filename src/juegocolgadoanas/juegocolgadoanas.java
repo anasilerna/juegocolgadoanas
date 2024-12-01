@@ -31,6 +31,10 @@ public class juegocolgadoanas {
 	            for (int i = 0; i < palabraSecreta.length(); i++) {
 	                palabraAdivinada[i] = '_';
 	            }
+	        // Inicializar intentos
+	            int intentosJugador1 = 6;
+	            int intentosJugador2 = 6;
+	            boolean palabraAdivinadaEntera = false;
 	}
 	}
 

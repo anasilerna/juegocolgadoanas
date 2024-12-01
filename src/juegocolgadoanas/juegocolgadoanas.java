@@ -12,6 +12,10 @@ public class juegocolgadoanas {
 	        System.out.print("¿Cuántas rondas quieren jugar?: ");
 	        int numRondas = scanner.nextInt();
 	        scanner.nextLine(); 
+	        
+	        // Puntajes iniciales
+	        int puntosJugador1 = 0;
+	        int puntosJugador2 = 0;
 
 	}
 

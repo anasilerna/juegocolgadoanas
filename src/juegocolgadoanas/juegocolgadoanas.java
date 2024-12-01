@@ -98,6 +98,12 @@ public class juegocolgadoanas {
 	                }
 	            }
 
+	            // Si nadie adivinó la palabra
+	            if (!palabraAdivinadaEntera) {
+	                System.out.println("\nNadie adivinó la palabra. Era: " + palabraSecreta);
+	            }
+	        }
+
 	   }
 	}
 	        }

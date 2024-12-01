@@ -25,6 +25,12 @@ public class juegocolgadoanas {
 	            // Administrador elige la palabra secreta
 	            System.out.print("Administrador, ingresa la palabra secreta (sin espacios): ");
 	            String palabraSecreta = scanner.nextLine().toLowerCase();
+	            
+	         // Pasa la palabra adivinada como un array de '_'
+	            char[] palabraAdivinada = new char[palabraSecreta.length()];
+	            for (int i = 0; i < palabraSecreta.length(); i++) {
+	                palabraAdivinada[i] = '_';
+	            }
 	}
 	}
 

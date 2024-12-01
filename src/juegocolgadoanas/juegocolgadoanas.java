@@ -51,11 +51,23 @@ public class juegocolgadoanas {
 	                        if (palabraSecreta.charAt(i) == letra) {
 	                            palabraAdivinada[i] = letra;
 	                            acierto = true;
+	                            
 	                        }
 	                    }
-
+	                    // Actualizar estado del juego
+	                    if (acierto) {
+	                        System.out.println("¡Correcto!");
+	                        if (String.valueOf(palabraAdivinada).equals(palabraSecreta)) {
+	                            System.out.println("\n¡" + "Jugador1" + " ha adivinado la palabra: " + palabraSecreta + "!");
+	                            puntosJugador1++;
+	                            palabraAdivinadaEntera = true;
+	                        }
+	                    } else {
+	                        System.out.println("Fallaste.");
+	                        intentosJugador1--;
+	                    }
+	                }
 	   }
 	}
 	        }
-}
 }

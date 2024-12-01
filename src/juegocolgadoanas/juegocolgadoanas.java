@@ -108,7 +108,15 @@ public class juegocolgadoanas {
 	        System.out.println("Puntajes finales:");
 	        System.out.println("Jugador1" + ": " + puntosJugador1 + " puntos");
 	        System.out.println("Jugador2" + ": " + puntosJugador2 + " puntos");
-
+	        
+	        // Imprimir el ganador
+	        if (puntosJugador1 > puntosJugador2) {
+	            System.out.println("Jugador1" + " es el ganador!");
+	        } else if (puntosJugador2 > puntosJugador1) {
+	            System.out.println("Jugador2" + " es el ganador!");
+	        } else {
+	            System.out.println("Empate!");
+	        }
 
 	   }
 	}

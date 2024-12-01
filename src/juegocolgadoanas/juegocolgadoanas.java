@@ -35,7 +35,27 @@ public class juegocolgadoanas {
 	            int intentosJugador1 = 6;
 	            int intentosJugador2 = 6;
 	            boolean palabraAdivinadaEntera = false;
-	}
-	}
+	            
+	         // Rondas de jugadores
+	            while (intentosJugador1 > 0 && intentosJugador2 > 0 && !palabraAdivinadaEntera) {
+	                // Jugador 1 intenta adivinar
+	                if (intentosJugador1 > 0 && !palabraAdivinadaEntera) {
+	                    System.out.println("Palabra actual: " + String.valueOf(palabraAdivinada));
+	                    System.out.println("Intentos restantes del Jugador 1: " + intentosJugador1);
+	                    System.out.print("Jugador 1, adivina una letra: ");
+	                    char letra = scanner.nextLine().toLowerCase().charAt(0);
 
+	                    // Comprobar si la letra está en la palabra
+	                    boolean acierto = false;
+	                    for (int i = 0; i < palabraSecreta.length(); i++) {
+	                        if (palabraSecreta.charAt(i) == letra) {
+	                            palabraAdivinada[i] = letra;
+	                            acierto = true;
+	                        }
+	                    }
+
+	   }
+	}
+	        }
+}
 }

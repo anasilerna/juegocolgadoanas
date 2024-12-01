@@ -20,7 +20,11 @@ public class juegocolgadoanas {
 	        // Inicio de Rondas
 	        for (int ronda = 1; ronda <= numRondas; ronda++) {
 	            System.out.println(" Ronda " + ronda + " ---");
-
+	            
+	            
+	            // Administrador elige la palabra secreta
+	            System.out.print("Administrador, ingresa la palabra secreta (sin espacios): ");
+	            String palabraSecreta = scanner.nextLine().toLowerCase();
 	}
 	}
 

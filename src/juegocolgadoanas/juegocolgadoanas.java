@@ -103,8 +103,14 @@ public class juegocolgadoanas {
 	                System.out.println("\nNadie adivinó la palabra. Era: " + palabraSecreta);
 	            }
 	        }
+	        // Imprimir los resultados
+	        System.out.println("\nFin del juego!");
+	        System.out.println("Puntajes finales:");
+	        System.out.println("Jugador1" + ": " + puntosJugador1 + " puntos");
+	        System.out.println("Jugador2" + ": " + puntosJugador2 + " puntos");
+
 
 	   }
 	}
-	        }
+	        
 

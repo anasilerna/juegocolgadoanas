@@ -5,6 +5,8 @@ public class juegocolgadoanas {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 Scanner scanner = new Scanner(System.in);
+		 // Iniciar el juego
+	        System.out.println("Bienvenidos al Juego del Colgado");
 	}
 
 }
